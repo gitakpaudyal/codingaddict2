@@ -26,3 +26,6 @@ for (let i = 0; i < bobsFollowers.length; i++) {
   }
 };
 */
+/*alsdjkfal;ksdfjkal;sdjfal;ks*/
+
+const fruits = ["apple", "kiwi", "banana"]
