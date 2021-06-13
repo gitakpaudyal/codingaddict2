@@ -1,5 +1,185 @@
 
+/*let spaceship = {
+  passengers: null,
+  telescope: {
+    yearBuilt: 2018,
+    model: "91031-XLT",
+    focalLength: 2032 
+  },
+  crew: {
+    captain: { 
+      name: 'Sandra', 
+      degree: 'Computer Engineering', 
+      encourageTeam() { console.log('We got this!') },
+     'favorite foods': ['cookies', 'cakes', 'candy', 'spinach'] }
+  },
+  engine: {
+    model: "Nimbus2000"
+  },
+  nanoelectronics: {
+    computer: {
+      terabytes: 100,
+      monitors: "HD"
+    },
+    'back-up': {
+      battery: "Lithium",
+      terabytes: 50
+    }
+  }
+}; 
+let capFave = spaceship.crew.captain['favorite foods'][0];
+spaceship.passengers = [{name:'Elon'}, 'Donald'];
+let firstPassenger = spaceship.passengers[0];
+const spaceship = {
+  telescope: {
+     yearBuilt: 2018,
+     model: '91031-XLT',
+     focalLength: 2032 
+  },
+ crew: {
+     captain: { 
+         name: 'Sandra', 
+         degree: 'Computer Engineering', 
+         encourageTeam() { console.log('We got this!') } 
+      }
+ },
+ engine: {
+     model: 'Nimbus2000'
+  },
+  nanoelectronics: {
+      computer: {
+         terabytes: 100,
+         monitors: 'HD'
+      },
+     'back-up': {
+        battery: 'Lithium',
+        terabytes: 50
+      }
+ }
+}; 
+spaceship.nanoelectronics.computer.battery; // Returns 'Lithium'
 
+/*
+
+let retreatMessage = 'We no longer wish to conquer your planet. It is full of dogs, which we do not care for.';
+
+// Write your code below
+const alienShip = {
+  retreat() {console.log(retreatMessage)},
+  takeOff() {console.log('Spim... Borp... Glix... Blastoff!')}
+}
+
+alienShip.retreat();
+alienShip.takeOff();//
+A property is what an object has, while a method is what an object does.
+For example console is a global javascript object and .log() is a method 
+on that object. 
+Math is also a global javascript object and .floor() is a method on it.
+We can include methods in our object literals by creating ordinary, comma-separated key-value pairs. 
+The key serves as our method’s name, while the value is an anonymous function expression.
+
+const alienShip = {
+  invade: function () { 
+    console.log('Hello! We have come to dominate your planet. Instead of Earth, it shall be called New Xaculon.')
+  }
+};
+
+const alienShip = {
+  invade () { 
+    console.log('Hello! We have come to dominate your planet. Instead of Earth, it shall be called New Xaculon.')
+  }
+};
+
+alienShip.invade(); // Prints 'Hello! We have come to dominate your planet. 
+Instead of Earth, it shall be called New Xaculon.'
+/*
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth',
+  color: 'silver',
+  'Secret Mission' : 'Discover life outside of Earth.'
+};
+
+// Write your code below
+spaceship.color = 'glorious gold';
+spaceship.numEngines = 5;
+delete spaceship['Secret Mission'];
+
+/*Objects are mutable meaning we can update them after we create them!
+
+We can use either dot notation, ., or bracket notation, [], and the assignment operator, = to add new key-value pairs to an object or change an existing property.
+
+It’s important to know that although we can’t reassign an object declared with const, 
+we can still mutate it, meaning we can add new properties and change the properties that are there.
+
+const spaceship = {type: 'shuttle'};
+spaceship = {type: 'alien'}; // TypeError: Assignment to constant variable.
+spaceship.type = 'alien'; // Changes the value of the type property
+spaceship.speed = 'Mach 5'; // Creates a new key of 'speed' with a value of 'Mach 5'
+/*
+
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  'Active Mission' : true,
+  homePlanet : 'Earth', 
+  numCrew: 5
+ };
+
+let propName =  'Active Mission';
+
+// Write your code below
+let isActive = spaceship['Active Mission'];
+console.log(spaceship['Active Mission']);
+let spaceship = {
+  'Fuel Type': 'Turbo Fuel',
+  'Active Duty': true,
+  homePlanet: 'Earth',
+  numCrew: 5
+};
+
+let returnAnyProp = (objectName, propName) => objectName[propName];
+
+returnAnyProp(spaceship, 'homePlanet'); // Returns 'Earth'
+
+/*Objects
+An object is a built-in data type for storing key-value pairs.
+ Data inside objects are unordered, 
+and the values can be of any type.
+
+JavaScript Objects are Mutable
+JavaScript objects are mutable, meaning their contents 
+can be changed, even when they are declared as const. New properties can be added, and existing property values can be changed or deleted.
+
+It is the reference to the object,
+ bound to the variable, that cannot be changed.
+
+
+const student = {
+  name: 'Sheldon',
+  score: 100,
+  grade: 'A',
+}
+ 
+console.log(student)
+// { name: 'Sheldon', score: 100, grade: 'A' }
+ 
+delete student.score
+student.grade = 'F'
+console.log(student)
+// { name: 'Sheldon', grade: 'F' }
+ 
+student = {}
+// TypeError: Assignment to constant variable.
+
+*/
+
+/*There are only seven fundamental data types in JavaScript,
+ and six of those are the primitive data types: string, number,
+  boolean, null, undefined, and symbol. With the seventh type,
+   objects, we open our code to more complex possibilities.
+    We can use JavaScript objects to model real-world things, 
+    like a basketball, or we can use objects to build the data structures
+     that make the web possible.*/
 /*
 const words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
 
